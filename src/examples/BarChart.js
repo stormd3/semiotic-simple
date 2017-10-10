@@ -33,7 +33,7 @@ export default class BarChart extends React.Component {
     return (
       <div>
         <ORFrame
-          size={[800, 400]}
+          size={[600, 400]}
           data={titleData}
           oAccessor={"studio"}
           rAccessor={"maxGross"}
@@ -43,7 +43,7 @@ export default class BarChart extends React.Component {
             stroke: colorHash[d.studio]
           })}
           axis={orAxis}
-          margin={{ top: 10, bottom: 50, right: 10, left: 100 }}
+          margin={{ top: 50, bottom: 50, right: 10, left: 100 }}
           oLabel={d => <text transform={"rotate(45)"}>{d}</text>}
           oPadding={10}
           hoverAnnotation={true}
