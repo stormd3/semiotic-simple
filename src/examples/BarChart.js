@@ -33,7 +33,7 @@ export default class BarChart extends React.Component {
     return (
       <div>
         <ORFrame
-          size={[1200, 600]}
+          size={[800, 400]}
           data={titleData}
           oAccessor={"studio"}
           rAccessor={"maxGross"}
