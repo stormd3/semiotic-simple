@@ -1,7 +1,5 @@
 import React from "react";
 import titleData from "./data/titles.json";
-import totalData from "./data/totals.json";
-//import { ORFrame } from "semiotic";
 import { ORFrame } from "../components";
 
 const colors = [

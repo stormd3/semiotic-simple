@@ -1,11 +1,7 @@
 import React from "react";
 import { Route, BrowserRouter, Link } from "react-router-dom";
 import Home from "./Home";
-import LineChart from "./LineChart";
 import BarChart from "./BarChart";
-import RankPlot from "./RankPlot";
-import ClimateDashboard from "./ClimateDashboard";
-import LineBrush from "./LineBrush";
 
 export default class App extends React.Component {
   render() {
@@ -15,24 +11,13 @@ export default class App extends React.Component {
           <header>
             <Link to="/">Home</Link>
             {` `}
-            <Link to="/line">LineChart</Link>
-            {` `}
             <Link to="/bar">BarChart</Link>
             {` `}
-            <Link to="/rankplot">Sketchy Rectangle Plot</Link>
-            {` `}
-            <Link to="/climate">Climate Dashboard</Link>
-            {` `}
-            <Link to="/linebrush">Line Brush</Link>
           </header>
 
           <main>
             <Route exact path="/" component={Home} />
-            <Route exact path="/line" component={LineChart} />
             <Route exact path="/bar" component={BarChart} />
-            <Route exact path="/rankplot" component={RankPlot} />
-            <Route exact path="/climate" component={ClimateDashboard} />
-            <Route exact path="/linebrush" component={LineBrush} />
           </main>
         </div>
       </BrowserRouter>
