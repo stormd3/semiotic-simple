@@ -8,7 +8,7 @@ const chartScale = scaleTime();
 const lineStyle = {
   fill: "#007190",
   stroke: "#007190",
-  strokeWidth: 1
+  strokeWidth: 3
 };
 
 aaplData.forEach(d => {
